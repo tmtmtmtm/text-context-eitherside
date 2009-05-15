@@ -1,0 +1,6 @@
+Changes
+lib/Text/Context/EitherSide.pm
+Makefile.PL
+MANIFEST
+t/1.t
+META.yml                                 Module meta-data (added by MakeMaker)
