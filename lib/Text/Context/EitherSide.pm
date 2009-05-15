@@ -5,7 +5,7 @@ use strict;
 use warnings;
 use Carp;
 
-our $VERSION = '1.2';
+our $VERSION = '1.3';
 
 use base 'Exporter';
 our @EXPORT_OK = qw(get_context);
@@ -81,7 +81,7 @@ sub as_list {
 
 sub as_string {
 	my $self = shift;
-	return (join " ", $self->as_list(@_));
+	return join " ", $self->as_list(@_);
 }
 
 1;
@@ -136,7 +136,9 @@ really don't want to end up with
 so you need a small amount of smarts. This module has a small amount of
 smarts.
 
-=head1 METHODS
+=head1 EXPORTABLE
+
+=head2 get_context
 
 This is primarily an object-oriented module. If you don't care about
 that, just import the C<get_context> subroutine, and call it like so:
@@ -145,6 +147,8 @@ that, just import the C<get_context> subroutine, and call it like so:
 
 and you'll get back a string with ellipses as in the synopsis. That's
 all that most people need to know. But if you want to do clever stuff...
+
+=head1 METHODS
 
 =head2 new
 
@@ -204,9 +208,9 @@ string.
 
 =head1 AUTHOR
 
-Original author: Simon Cozens
-
 Current maintainer: Tony Bowden
+
+Original author: Simon Cozens
 
 =head1 BUGS and QUERIES
 
@@ -215,7 +219,7 @@ Please direct all correspondence regarding this module to:
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2002-2004 by Kasei Limited, http://www.kasei.com/
+Copyright 2002-2005 by Kasei Limited, http://www.kasei.com/
 
 You may use and redistribute this module under the terms of the
 Artistic License.
