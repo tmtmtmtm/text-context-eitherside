@@ -11,11 +11,11 @@ SYNOPSIS
 
       $context->as_string("fox", "jumped") 
         # "... quick brown fox jumped over the ..."
-  
-      my $context = Text::Context::EitherSide->new($text, context => 1);
+      
+  my $context = Text::Context::EitherSide->new($text, context => 1);
         # 1 word on either side
-  
-      $context->as_string("fox", "jumped", "dog");
+      
+  $context->as_string("fox", "jumped", "dog");
         # "... brown fox jumped over ... lazy dog",
 
     Or, if you don't believe in all this OO rubbish:
@@ -116,5 +116,7 @@ COPYRIGHT AND LICENSE
     Copyright 2002-2005 by Kasei Limited, http://www.kasei.com/
 
     You may use and redistribute this module under the terms of the Artistic
-    License.
+    License 2.0.
+
+    http://www.perlfoundation.org/artistic_license_2_0
 
